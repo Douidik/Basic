@@ -1,0 +1,5 @@
+file(GLOB_RECURSE SANDBOX_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+file(GLOB_RECURSE SANDBOX_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
+
+add_executable(sandbox ${SANDBOX_SOURCES} ${SANDBOX_HEADERS})
+target_link_libraries(sandbox PRIVATE basic-engine)
